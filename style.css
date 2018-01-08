@@ -1,0 +1,121 @@
+/* Vous utilisez la taille et la couleur que vous voulez */
+#target {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    transition: 1s;
+}
+
+#target.translate {
+    /*transform: translate(20px, -20px);*/
+    background-color: #11114a;
+    animation: translate 2s infinite;
+}
+
+#target.rotate {
+    /*transform: rotate(-15deg);*/
+    background-color: #5a5a5a;
+    animation: rotate 2s infinite;
+}
+
+#target.scale {
+    /*transform: scale(1.1);*/
+    background-color: #144b14;
+    animation: scale 2s infinite;
+}
+
+#target.skew {
+    /*transform: skew(15deg);*/
+    background-color: #ff7400;
+    animation: skew 2s infinite;
+}
+
+#target.translate3d {
+    background-color: #4b3020;
+    /*transform: translate3d(10px, 20px, 30px);*/
+    animation: translate3d 2s infinite;
+}
+
+#target.rotate3d {
+    background-image: url(kappa.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    /*transform: rotate3d(1,2,1,30deg);*/
+    animation: rotate3d 2s infinite;
+}
+
+button {
+    margin-top: 20px;
+}
+
+@keyframes translate {
+    25% {
+        transform: translate(20px, -20px);
+    }
+    50% {
+        transform: translate(-20px, -20px);
+    }
+    75% {
+        transform: translate(-20px, 20px);
+    }
+}
+
+@keyframes rotate {
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes scale {
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(.5);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes skew {
+    25% {
+        transform: skew(15deg);
+    }
+    50% {
+        transform: skew(-15deg);
+    }
+    75% {
+        transform: skew(30deg);
+    }
+}
+
+@keyframes translate3d {
+    25% {
+        transform: translate3d(10px, 20px, 30px);
+    }
+    50% {
+        transform: translate3d(30px, 20px, 10px);
+    }
+    75% {
+        transform: translate3d(10px, 10px, 50px);
+    }
+}
+
+@keyframes rotate3d {
+    25% {
+        transform: rotate3d(1,2,1,50deg)
+    }
+    50% {
+        transform: rotate3d(3,2,1,30deg)
+    }
+    75% {
+        transform: rotate3d(1,2,3,10deg)
+    }
+}
