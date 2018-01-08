@@ -78,6 +78,5 @@ AnimationWeb = {
     },
     reset: function(){
         AnimationWeb.target.removeAttribute('class');
-        AnimationWeb.target.setAttribute('class', '');
     }
 };
